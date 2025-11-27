@@ -1,9 +1,11 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import { useState, useMemo, useEffect, useRef } from "react";
+import { useState, useMemo, useEffect, useRef, useLayoutEffect } from "react";
 import { vocabularyList } from "./data/vocabulary";
 import VocabularyCard from "./components/VocabularyCard";
 import Pagination from "./components/Pagination";
+import DateTimeDisplay from "./components/DateTimeDisplay";
 
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
@@ -16,6 +18,10 @@ export default function Home() {
   const [showSpeaker, setShowSpeaker] = useState(true);
   const [autoScroll, setAutoScroll] = useState(true);
   const [itemsPerPage, setItemsPerPage] = useState(25);
+
+  // Refs for scroll preservation
+  const prevScrollHeight = useRef(0);
+  const prevScrollPos = useRef(0);
 
   useEffect(() => {
     const savedExamples = localStorage.getItem("showExamples");
@@ -51,11 +57,31 @@ export default function Home() {
   };
 
   const handlePageChange = (page: number) => {
+    if (!autoScroll) {
+      prevScrollHeight.current = document.documentElement.scrollHeight;
+      prevScrollPos.current = window.scrollY;
+    }
     setCurrentPage(page);
     if (autoScroll && resultsRef.current) {
       resultsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useLayoutEffect(() => {
+    if (!autoScroll && prevScrollHeight.current > 0) {
+      const newScrollHeight = document.documentElement.scrollHeight;
+      const heightDifference = newScrollHeight - prevScrollHeight.current;
+      
+      // Adjust scroll to maintain position relative to the bottom
+      if (heightDifference !== 0) {
+        window.scrollTo({ 
+          top: prevScrollPos.current + heightDifference, 
+          behavior: 'instant' 
+        });
+      }
+      prevScrollHeight.current = 0;
+    }
+  }, [currentPage, autoScroll]);
 
   const handleItemsPerPageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const value = e.target.value;
@@ -105,8 +131,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-300">
-      <main className="container mx-auto px-4 py-12 max-w-6xl">
-
+      <main className="container mx-auto px-4 py-12 max-w-7xl">
+        
+        <DateTimeDisplay />
 
         {/* Header */}
         <div className="mb-12 text-center space-y-4">
@@ -235,9 +262,24 @@ export default function Home() {
                 className="relative w-full px-6 py-4 bg-white dark:bg-zinc-900 border-none rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none text-lg placeholder-zinc-400 dark:placeholder-zinc-600 transition-all"
               />
               <div className="absolute right-4 top-1/2 transform -translate-y-1/2 text-zinc-400">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>
+                {search ? (
+                  <button
+                    onClick={() => {
+                      setSearch("");
+                      setCurrentPage(1);
+                    }}
+                    className="p-1 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors cursor-pointer"
+                    aria-label="Clear search"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                ) : (
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>
+                )}
               </div>
             </div>
           </div>
@@ -286,9 +328,9 @@ export default function Home() {
               onChange={handleItemsPerPageChange}
               className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 cursor-pointer"
             >
-              <option value="25">25</option>
-              <option value="50">50</option>
-              <option value="100">100</option>
+              <option value="30">30</option>
+              <option value="60">60</option>
+              <option value="120">120</option>
               <option value="all">All</option>
             </select>
           </div>

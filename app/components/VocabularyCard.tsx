@@ -20,7 +20,7 @@ export default function VocabularyCard({ item, showExamples, showSpeaker }: Voca
       {/* Main Content: Word, Controls, Translation */}
       <div className="flex-1 flex justify-between items-center gap-4 mb-4">
         <div className="flex flex-wrap items-center gap-3">
-          <h2 className="text-2xl md:text-3xl font-normal uppercase text-zinc-800 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors font-samsung">
+          <h2 className="text-xl md:text-2xl font-normal uppercase text-zinc-800 dark:text-zinc-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors font-samsung">
             {item.word}
           </h2>
           
@@ -55,9 +55,12 @@ export default function VocabularyCard({ item, showExamples, showSpeaker }: Voca
           </div>
         </div>
 
-        <div className="flex flex-col items-end gap-1 shrink-0">
+        <div className="flex flex-col items-end gap-1 max-w-[60%]">
           {item.translation.split(',').map((t, i, arr) => (
-            <span key={i} className="text-xl md:text-2xl font-normal text-zinc-600 dark:text-white text-right leading-tight">
+            <span 
+              key={i} 
+              className="text-lg md:text-xl font-normal text-zinc-600 dark:text-white text-right leading-tight break-words text-balance"
+            >
               {t.trim()}{i < arr.length - 1 ? ',' : ''}
             </span>
           ))}
