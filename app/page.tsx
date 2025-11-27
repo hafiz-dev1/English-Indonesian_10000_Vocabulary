@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { vocabularyList } from "./data/vocabulary";
 import VocabularyCard from "./components/VocabularyCard";
 import Pagination from "./components/Pagination";
@@ -12,6 +12,31 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showExamples, setShowExamples] = useState(true);
+  const [showSpeaker, setShowSpeaker] = useState(true);
+
+  useEffect(() => {
+    const savedExamples = localStorage.getItem("showExamples");
+    if (savedExamples !== null) {
+      setShowExamples(JSON.parse(savedExamples));
+    }
+    const savedSpeaker = localStorage.getItem("showSpeaker");
+    if (savedSpeaker !== null) {
+      setShowSpeaker(JSON.parse(savedSpeaker));
+    }
+  }, []);
+
+  const toggleExamples = () => {
+    const newValue = !showExamples;
+    setShowExamples(newValue);
+    localStorage.setItem("showExamples", JSON.stringify(newValue));
+  };
+
+  const toggleSpeaker = () => {
+    const newValue = !showSpeaker;
+    setShowSpeaker(newValue);
+    localStorage.setItem("showSpeaker", JSON.stringify(newValue));
+  };
 
   // Filter logic
   const filteredVocab = useMemo(() => {
@@ -52,6 +77,75 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 font-sans transition-colors duration-300">
       <main className="container mx-auto px-4 py-12 max-w-6xl">
+        {/* Top Controls */}
+        <div className="flex justify-end mb-2 gap-2">
+          <button
+            onClick={toggleSpeaker}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
+              showSpeaker
+                ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+                : "bg-zinc-100 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400"
+            }`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4"
+            >
+              {showSpeaker ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 9.75L19.5 12m0 0l2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"
+                />
+              )}
+            </svg>
+            {showSpeaker ? "Speaker On" : "Speaker Off"}
+          </button>
+
+          <button
+            onClick={toggleExamples}
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer ${
+              showExamples
+                ? "bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
+                : "bg-zinc-100 text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400"
+            }`}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-4 h-4"
+            >
+              {showExamples ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178zM15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"
+                />
+              )}
+            </svg>
+            {showExamples ? "Examples On" : "Examples Off"}
+          </button>
+        </div>
+
         {/* Header */}
         <div className="mb-12 text-center space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent pb-2">
@@ -118,10 +212,15 @@ export default function Home() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {currentVocab.length > 0 ? (
             currentVocab.map((item) => (
-              <VocabularyCard key={item.id} item={item} />
+              <VocabularyCard 
+                key={item.id} 
+                item={item} 
+                showExamples={showExamples}
+                showSpeaker={showSpeaker}
+              />
             ))
           ) : (
             <div className="col-span-full text-center py-20 bg-white dark:bg-zinc-900/30 rounded-3xl border border-dashed border-zinc-300 dark:border-zinc-700">
