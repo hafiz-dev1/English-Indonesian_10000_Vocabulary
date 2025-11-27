@@ -56,9 +56,9 @@ export default function VocabularyCard({ item, showExamples, showSpeaker }: Voca
         </div>
 
         <div className="flex flex-col items-end gap-1 shrink-0">
-          {item.translation.split(',').map((t, i) => (
+          {item.translation.split(',').map((t, i, arr) => (
             <span key={i} className="text-xl md:text-2xl font-normal text-zinc-600 dark:text-white text-right leading-tight">
-              {t.trim()}
+              {t.trim()}{i < arr.length - 1 ? ',' : ''}
             </span>
           ))}
         </div>
