@@ -415,7 +415,8 @@ export default function Home() {
         />
 
         <footer className="mt-20 text-center text-zinc-400 text-sm border-t border-zinc-200 dark:border-zinc-800 pt-8 pb-8">
-          <p className="mb-4">© {new Date().getFullYear()} English Vocabulary. Learning made simple.</p>
+          <p className="mb-2">© {new Date().getFullYear()} English Vocabulary. Learning made simple.</p>
+          <p className="mb-6 font-medium text-zinc-500 dark:text-zinc-400">Made by Hafiz Amrullah</p>
           
           <div className="flex justify-center gap-6">
             <a 
