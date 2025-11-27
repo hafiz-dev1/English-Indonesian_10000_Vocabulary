@@ -2939,7 +2939,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 489,
     word: 'Client',
     translation: 'Klien',
-    example: '" The statements may be highly prejudicial to my client ", Bellows told the court.',
+    example: 'The lawyer met with his client.',
   },
   {
     id: 490,
@@ -4145,7 +4145,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 690,
     word: 'Dad',
     translation: 'Ayah',
-    example: '" Your dad sounds like a good father and a good policeman.',
+    example: 'My dad is my hero.',
   },
   {
     id: 691,
@@ -8219,7 +8219,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 1369,
     word: 'Income',
     translation: 'Penghasilan',
-    example: '" But I am not in favor of a sales or state income tax at this time ", Mitchell said.',
+    example: 'Her annual income increased this year.',
   },
   {
     id: 1370,
@@ -9797,7 +9797,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 1632,
     word: 'May',
     translation: 'Mungkin, Boleh',
-    example: '" The statements may be highly prejudicial to my client ", Bellows told the court.',
+    example: 'You may leave the room now.',
   },
   {
     id: 1633,
@@ -11105,7 +11105,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 1850,
     word: 'Ought',
     translation: 'Harus',
-    example: '" Ought not to be missed.',
+    example: 'You ought to apologize to her.',
   },
   {
     id: 1851,
@@ -12065,7 +12065,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 2010,
     word: 'Practitioner',
     translation: 'Praktisi',
-    example: '" Factors in the cost of treatment are the length of time involved and the skill and education of the practitioner ", says Dr. Brodie.',
+    example: 'She is a medical practitioner.',
   },
   {
     id: 2011,
@@ -15227,7 +15227,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 2537,
     word: 'Steak',
     translation: 'Steak',
-    example: '" Pretty much hamburger, hotdogs, steak and, at night, maybe pizza ", says the handsome food expert.',
+    example: 'I like my steak medium rare.',
   },
   {
     id: 2538,
@@ -16235,7 +16235,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 2705,
     word: 'Thirteen',
     translation: 'Tiga Belas',
-    example: '" Thirteen ", said Long Jim.',
+    example: 'She just turned thirteen.',
   },
   {
     id: 2706,
@@ -17519,7 +17519,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 2919,
     word: 'Where',
     translation: 'Di Mana',
-    example: '" In this light we need 1,000 churches in Illinois, where we have 200;;',
+    example: 'Where did you put the keys?',
   },
   {
     id: 2920,
@@ -18299,7 +18299,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3049,
     word: 'Breach',
     translation: 'Pelanggaran, Retakan',
-    example: '"Once more unto the breach, dear friends, once more; Or close the wall up with our English dead."',
+    example: 'There was a security breach at the bank.',
   },
   {
     id: 3050,
@@ -18575,7 +18575,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3095,
     word: 'Astonish',
     translation: 'Mengejutkan',
-    example: '"I have no right to give my opinion," said Wickham, "as to his being agreeable or otherwise.',
+    example: 'The magician\'s tricks astonished the audience.',
   },
   {
     id: 3096,
@@ -19241,7 +19241,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3206,
     word: 'Celebrity',
     translation: 'Selebriti',
-    example: '"What do you put in your paper?" I asked, […] "Oh, news," said he, "and dull articles, and things about Celebrities.',
+    example: 'He became a celebrity overnight.',
   },
   {
     id: 3207,
@@ -19763,7 +19763,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3293,
     word: 'Deploy',
     translation: 'Menerapkan, Menggelar',
-    example: '"Deploy two units of infantry along the enemy\'s flank," the general ordered.',
+    example: 'The troops were deployed to the border.',
   },
   {
     id: 3294,
@@ -19787,7 +19787,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3297,
     word: 'Deprive',
     translation: 'Mencabut, Merampas',
-    example: '"By means of the Golden Cap I shall command the Winged Monkeys to carry you to the gates of the Emerald City," said Glinda...',
+    example: 'You cannot deprive him of his rights.',
   },
   {
     id: 3298,
@@ -20381,7 +20381,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3396,
     word: 'Hop',
     translation: 'Melompat, Hop (Tumbuhan)',
-    example: '"Police!" snarled Jack.',
+    example: 'The rabbit hopped across the field.',
   },
   {
     id: 3397,
@@ -21947,7 +21947,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3657,
     word: 'Nought',
     translation: 'Nol, Kosong',
-    example: '"It is the truth; naught have I hidden from thee, Kallikrates."',
+    example: 'All his efforts came to nought.',
   },
   {
     id: 3658,
@@ -22049,7 +22049,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3674,
     word: 'Paradox',
     translation: 'Paradoks',
-    example: '"This sentence is false" is a paradox.',
+    example: 'It is a paradox that standing is more tiring than walking.',
   },
   {
     id: 3675,
@@ -22103,7 +22103,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3683,
     word: 'Pond',
     translation: 'Kolam',
-    example: '"How do you know?" asked Mr Pond rather snappishly and in unusual irritation.',
+    example: 'The ducks swam in the pond.',
   },
   {
     id: 3684,
@@ -22235,7 +22235,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 3705,
     word: 'Ongoing',
     translation: 'Berlangsung, Terus Menerus',
-    example: '"Major refurbishments will be made over the next ten years. We have nine wooden viaducts along the line - it\'s an ongoing programme," he says.',
+    example: 'There is an ongoing investigation.',
   },
   {
     id: 3706,
@@ -24599,7 +24599,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4099,
     word: 'Audible',
     translation: 'Terdengar',
-    example: '"Now, look here, Jim Hawkins," he said, in a steady whisper, that was no more than audible […]',
+    example: 'Her voice was barely audible.',
   },
   {
     id: 4100,
@@ -24725,7 +24725,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4120,
     word: 'Coral',
     translation: 'Karang',
-    example: '"Where are you from originally, Coral?" / "Indiana." / "Lots of Corals out there, I bet." / She hesitated, seemed about to flare...',
+    example: 'The coral reef is beautiful.',
   },
   {
     id: 4121,
@@ -25205,7 +25205,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4200,
     word: 'Cue',
     translation: 'Isyarat, Tanda',
-    example: '"My name is Quinn," said Quinn. "Cue-you-eye-en-en."',
+    example: 'That was my cue to enter the stage.',
   },
   {
     id: 4201,
@@ -25247,7 +25247,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4207,
     word: 'Confide',
     translation: 'Mengungkapkan Rahasia',
-    example: '"Be calm, lovely Antonia!" he replied; "no danger in near you: confide in my protection."',
+    example: 'She confided her secrets to her best friend.',
   },
   {
     id: 4208,
@@ -25403,7 +25403,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4233,
     word: 'Dinosaur',
     translation: 'Dinosaurus',
-    example: '"Not a bird, my dear Roxton - not a bird." "A beast?" "No; a reptile - a dinosaur."',
+    example: 'The T-Rex is a famous dinosaur.',
   },
   {
     id: 4234,
@@ -26057,7 +26057,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4342,
     word: 'Dreadful',
     translation: 'Mengerikan, Buruk Sekali',
-    example: '"...Aunt Em will surely think something dreadful has happened to me, and that will make her put on mourning..."',
+    example: 'The weather was dreadful yesterday.',
   },
   {
     id: 4343,
@@ -26627,7 +26627,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4437,
     word: 'Ham',
     translation: 'Ham, Paha Babi',
-    example: '"I\'ll have you so your hams will stand out like horse\'s shanks!" de declared.',
+    example: 'I had a ham sandwich for lunch.',
   },
   {
     id: 4438,
@@ -27095,7 +27095,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4515,
     word: 'Nickname',
     translation: 'Julukan',
-    example: '"The Big Apple" is a common nickname for New York City.',
+    example: 'His nickname is \'Speedy\'.',
   },
   {
     id: 4516,
@@ -27347,7 +27347,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4557,
     word: 'Meadow',
     translation: 'Padang Rumput',
-    example: '"Oh, shoot. This must be bad. You\'re drinking a cocktail in the middle of the day," Meadow said, leaning down to hug her sister.',
+    example: 'The cows grazed in the meadow.',
   },
   {
     id: 4558,
@@ -27389,7 +27389,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4564,
     word: 'Partisan',
     translation: 'Partisan, Pendukung',
-    example: '"Strong partisans of neither party, Indiana farmers failed to act as a block […]"',
+    example: 'He is a partisan of the conservative party.',
   },
   {
     id: 4565,
@@ -28985,13 +28985,13 @@ export const vocabularyList: Vocabulary[] = [
     id: 4830,
     word: 'Slogan',
     translation: 'Slogan',
-    example: '"Right-ho," I [Bertie Wooster] said, not much liking the assignment...',
+    example: 'The company\'s slogan is very catchy.',
   },
   {
     id: 4831,
     word: 'Sprint',
     translation: 'Lari Cepat',
-    example: '"So I broke away early this mornin\', gave my guard a kick in the tummy that laid him out, and sprinted for the camp.',
+    example: 'He sprinted to the finish line.',
   },
   {
     id: 4832,
@@ -29135,7 +29135,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4855,
     word: 'Ulcer',
     translation: 'Bisul, Luka',
-    example: '"Worry never solved any problems. Only gives you ulcers."',
+    example: 'Stress can cause a stomach ulcer.',
   },
   {
     id: 4856,
@@ -29489,7 +29489,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4914,
     word: 'Transparent',
     translation: 'Transparan, Jelas',
-    example: '"You make the glass invisible by putting it into a liquid of nearly the same refractive index.',
+    example: 'The glass is transparent.',
   },
   {
     id: 4915,
@@ -29633,7 +29633,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4938,
     word: 'Trivial',
     translation: 'Sepele, Tidak Penting',
-    example: '"All which details, I have no doubt, Jones, who reads this book at his Club, will pronounce to be excessively foolish, trivial, twaddling...',
+    example: 'Don\'t worry about trivial matters.',
   },
   {
     id: 4939,
@@ -29711,7 +29711,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4951,
     word: 'Ventilate',
     translation: 'Menganginkan, Ventilasi',
-    example: '"Well, I did my best.',
+    example: 'We need to ventilate the room.',
   },
   {
     id: 4952,
@@ -29933,7 +29933,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 4988,
     word: 'Bliss',
     translation: 'Kebahagiaan, Kenikmatan',
-    example: '"Mother doesn\'t seem to especially like her little granddaughter as it is, even named \'Edna Louise\'.',
+    example: 'Lying on the beach was pure bliss.',
   },
   {
     id: 4989,
@@ -31331,7 +31331,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5221,
     word: 'Commonplace',
     translation: 'Biasa, Umum',
-    example: '"This Mr. Tyrrel," she said, in a tone of authoritative decision, "seems after all a very ordinary sort of person, quite a commonplace man."',
+    example: 'Smartphones have become commonplace.',
   },
   {
     id: 5222,
@@ -31367,7 +31367,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5227,
     word: 'Denomination',
     translation: 'Denominasi, Penamaan',
-    example: '"Will you allow me to present Sir George Evelyn to you?—the most accomplished coquet that ever \'Dealt destruction round the land On all he judged a...',
+    example: 'They accepted coins of any denomination.',
   },
   {
     id: 5228,
@@ -31529,7 +31529,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5254,
     word: 'Fern',
     translation: 'Pakis, Tumbuhan Pakis',
-    example: '"Charlotte is the best storyteller I ever heard," said Fern, poking her dish towel into a cereal bowl.',
+    example: 'The fern grows well in the shade.',
   },
   {
     id: 5255,
@@ -32477,7 +32477,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5412,
     word: 'Gypsy',
     translation: 'Gipsi, Pengembara',
-    example: '"Why, good afternoon, Miss Gypsy," said Sir Simms; "I\'m surprised to see you such a warm day — very much surprised.',
+    example: 'The gypsy told my fortune.',
   },
   {
     id: 5413,
@@ -32999,7 +32999,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5499,
     word: 'Lily',
     translation: 'Lili, Bunga Lili',
-    example: '"Poor little thing!',
+    example: 'She planted a lily in the garden.',
   },
   {
     id: 5500,
@@ -33233,7 +33233,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5538,
     word: 'Jolly',
     translation: 'Riang, Ceria',
-    example: '"Full jolly Knight he seemed […] full large of limb and every joint / He was, and cared not for God or man a point."',
+    example: 'He was a jolly old man.',
   },
   {
     id: 5539,
@@ -33731,7 +33731,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5621,
     word: 'Presuppose',
     translation: 'Mensyaratkan, Mengasumsikan',
-    example: '"Nay," replied her companion, "what have I done for you to presuppose such a want of gallantry...',
+    example: 'This argument presupposes that we have a choice.',
   },
   {
     id: 5622,
@@ -33803,7 +33803,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5633,
     word: 'Prod',
     translation: 'Menyodok, Mendorong',
-    example: '"I don\'t want my daughter marrying a dirty Prod," he said.',
+    example: 'She prodded him to wake up.',
   },
   {
     id: 5634,
@@ -34781,7 +34781,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5796,
     word: 'Snort',
     translation: 'Mendengus, Menghirup',
-    example: '"I absolutely refuse to leave, however, until we have made at least a superficial examination of this country...',
+    example: 'The horse snorted in the cold air.',
   },
   {
     id: 5797,
@@ -35069,7 +35069,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 5844,
     word: 'Squeak',
     translation: 'Cicit, Bunyi Nyaring',
-    example: '"I had the very devil of a squeak for it," he went on.',
+    example: 'The door hinge squeaked.',
   },
   {
     id: 5845,
@@ -36317,7 +36317,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6052,
     word: 'Buffalo',
     translation: 'Kerbau, Banteng',
-    example: '"It must be a very wild stretch of country, and full of big game. I have always wanted to kill a buffalo before I die."',
+    example: 'The buffalo roamed the plains.',
   },
   {
     id: 6053,
@@ -36353,7 +36353,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6058,
     word: 'Aspirin',
     translation: 'Aspirin, Obat Pereda Nyeri',
-    example: '"It nearly drove me insane. I took heaven alone knows how many aspirins."',
+    example: 'Take an aspirin for your headache.',
   },
   {
     id: 6059,
@@ -36863,7 +36863,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6143,
     word: 'Crag',
     translation: 'Tebing Curam, Batu Keras',
-    example: '"Have, then, thy wish!"—he whistled shrill, / And he was answered from the hill.',
+    example: 'The eagle nested on a high crag.',
   },
   {
     id: 6144,
@@ -38927,7 +38927,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6487,
     word: 'Narcotic',
     translation: 'Narkotika, Obat Penenang',
-    example: '"Real San Juan Colorado," he said. "Excitable people like you are the better for narcotics. Heavens! don\'t bite it! Cut - and cut with reverence!"',
+    example: 'Morphine is a powerful narcotic.',
   },
   {
     id: 6488,
@@ -39281,7 +39281,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6546,
     word: 'Modulate',
     translation: 'Memodulasi, Mengatur',
-    example: '"Can you tell?" she asked, in a trembling but well modulated and sensual voice.',
+    example: 'He learned to modulate his voice.',
   },
   {
     id: 6547,
@@ -41573,7 +41573,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 6928,
     word: 'Warhead',
     translation: 'Hulu Ledak, Kepala Peluru',
-    example: '"To their anchorage off Kodiak," Chuck says.',
+    example: 'The missile carried a nuclear warhead.',
   },
   {
     id: 6929,
@@ -42197,7 +42197,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7032,
     word: 'Basil',
     translation: 'Daun Basil, Kemangi',
-    example: '"Nonsense.',
+    example: 'Fresh basil smells wonderful.',
   },
   {
     id: 7033,
@@ -42521,7 +42521,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7086,
     word: 'Analogue',
     translation: 'Analog, Serupa',
-    example: '"But if so, why do you see so many young children on steam trains - apart, that is, from being dragged along by their fathers, or grandfathers?',
+    example: 'The analogue clock has hands.',
   },
   {
     id: 7087,
@@ -42707,7 +42707,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7117,
     word: 'Criminology',
     translation: 'Kriminologi',
-    example: '"So that then begins a sort of rethinking of my idea of criminology," Weisburd said.',
+    example: 'She is studying criminology at university.',
   },
   {
     id: 7118,
@@ -42899,7 +42899,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7149,
     word: 'Cumbersome',
     translation: 'Merepotkan, Berat',
-    example: '"You can throw off your cumbersome disguise here," said Lucy, though the words could scarcely be distinguished, from her excessive agitation...',
+    example: 'The heavy box was cumbersome to carry.',
   },
   {
     id: 7150,
@@ -43091,7 +43091,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7181,
     word: 'Decadence',
     translation: 'Dekadensi',
-    example: '"Stability, however, is not enough. It leads too easily to stagnation, and thence to decadence."',
+    example: 'The empire fell into decadence.',
   },
   {
     id: 7182,
@@ -43937,7 +43937,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7322,
     word: 'Domesticate',
     translation: 'Menjinakkan',
-    example: '"To answer your question, Tai\'s fine.',
+    example: 'Dogs were domesticated thousands of years ago.',
   },
   {
     id: 7323,
@@ -43997,7 +43997,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7332,
     word: 'Fidget',
     translation: 'Gelisah, Tidak Tenang',
-    example: '"Look, Jim, how my fingers fidget," he continued, in the pleading tone. "I can\'t keep e\'m still, not I."',
+    example: 'Stop fidgeting and sit still.',
   },
   {
     id: 7333,
@@ -44783,7 +44783,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7463,
     word: 'Inert',
     translation: 'Inert, Tidak Aktif',
-    example: '"As for the other forms of magic, previous systems of magic are now accessible if one knows how to do so, though no human alive should know how.',
+    example: 'The gas is chemically inert.',
   },
   {
     id: 7464,
@@ -44951,7 +44951,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7491,
     word: 'Mead',
     translation: 'Madu Fermentasi, Minuman Mead',
-    example: '"Just come in," said Mrs. Churchill, "and take one glass of my mead." / "No—not even such a golden promise tempts me.',
+    example: 'Vikings drank mead.',
   },
   {
     id: 7492,
@@ -45629,7 +45629,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7604,
     word: 'Pout',
     translation: 'Cemberut, Merajuk',
-    example: '"Don\'t you love me any more?" she pouted.',
+    example: 'Don\'t pout just because you lost.',
   },
   {
     id: 7605,
@@ -46199,7 +46199,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7699,
     word: 'Poppy',
     translation: 'Bunga Poppy',
-    example: '"It is a very pretty name, Mma.',
+    example: 'The poppy is a red flower.',
   },
   {
     id: 7700,
@@ -47033,7 +47033,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7838,
     word: 'Savannah',
     translation: 'Sabana, Padang Rumput',
-    example: '"I kind of like Bianca.',
+    example: 'Lions live in the African savannah.',
   },
   {
     id: 7839,
@@ -47609,7 +47609,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7934,
     word: 'Treatise',
     translation: 'Risalah, Tulisan Ilmiah',
-    example: '"As you cannot make a speech, you must," said Henrietta, "put it into a treatise."',
+    example: 'He wrote a treatise on philosophy.',
   },
   {
     id: 7935,
@@ -47777,7 +47777,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 7962,
     word: 'Tummy',
     translation: 'Perut, Perut Kecil',
-    example: '"So I broke away early this mornin\', gave my guard a kick in the tummy that laid him out, and sprinted for the camp."',
+    example: 'My tummy hurts.',
   },
   {
     id: 7963,
@@ -48101,7 +48101,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8016,
     word: 'Brat',
     translation: 'Anak Nakal, Anak Manja',
-    example: '"So...',
+    example: 'Stop acting like a spoiled brat.',
   },
   {
     id: 8017,
@@ -48629,7 +48629,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8104,
     word: 'Daffodil',
     translation: 'Dafodil, Bunga Bakung',
-    example: '"Pansy would be his wife," Delia guessed.',
+    example: 'The daffodil blooms in spring.',
   },
   {
     id: 8105,
@@ -48689,7 +48689,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8114,
     word: 'Coffer',
     translation: 'Peti Harta, Dana',
-    example: '"There is nothing in that," said Guido, "but a genealogy of the Carraras, drawn up by my grandfather.',
+    example: 'The state coffers are empty.',
   },
   {
     id: 8115,
@@ -48899,7 +48899,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8149,
     word: 'Caustic',
     translation: 'Kaustik, Mengikis',
-    example: '"How now!" said Scrooge, caustic and cold as ever.',
+    example: 'He made a caustic remark.',
   },
   {
     id: 8150,
@@ -49091,13 +49091,13 @@ export const vocabularyList: Vocabulary[] = [
     id: 8181,
     word: 'Chirp',
     translation: 'Kicauan, Cicitan',
-    example: '"Well, I suppose you didn\'t come out of the egg either before you could chirp," said the woman who was on the egg.',
+    example: 'The birds chirped in the morning.',
   },
   {
     id: 8182,
     word: 'Consternation',
     translation: 'Keterkejutan, Kekhawatiran',
-    example: '"Out!" exclaimed her husband, with something like genuine consternation in his voice.',
+    example: 'To her consternation, she lost her keys.',
   },
   {
     id: 8183,
@@ -49211,7 +49211,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8201,
     word: 'Circumscribe',
     translation: 'Membatasi, Mengelilingi',
-    example: '"Well, I promise you to circumscribe her conquests as much as possible by extending my own," returned Henrietta.',
+    example: 'His power was circumscribed by the law.',
   },
   {
     id: 8202,
@@ -50651,7 +50651,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8441,
     word: 'Harem',
     translation: 'Harem, Kelompok Istri',
-    example: '"In the room next to her own, lived the harem of a merchant who had just arrived from Constantinople with merchandise.',
+    example: 'The sultan had a large harem.',
   },
   {
     id: 8442,
@@ -51059,7 +51059,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8509,
     word: 'Laurel',
     translation: 'Laurel/Daun Salam',
-    example: '"What on earth made Becky give you a name like that?" she\'d asked Laurel, on that first occasion.',
+    example: 'He rested on his laurels.',
   },
   {
     id: 8510,
@@ -51083,7 +51083,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8513,
     word: 'Leach',
     translation: 'Melindi/Merembes',
-    example: '"This is the leach," said Kitty, pointing to a large, yellowish, upright wooden cylinder, which rested on some slanting boards...',
+    example: 'Chemicals can leach into the soil.',
   },
   {
     id: 8514,
@@ -51251,7 +51251,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8541,
     word: 'Lilac',
     translation: 'Lilac',
-    example: '"Lilac Kingsmith," I said. "What a neat name."',
+    example: 'The lilac bush smells lovely.',
   },
   {
     id: 8542,
@@ -52235,7 +52235,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8705,
     word: 'Permissive',
     translation: 'Permisif, Longgar',
-    example: '"Permissive" working allows more than one train to be in a block section at one time but trains must be run at low speed in order to stop on sight...',
+    example: 'Her parents were very permissive.',
   },
   {
     id: 8706,
@@ -52445,7 +52445,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8740,
     word: 'Soggy',
     translation: 'Basah Kuyup, Lembap',
-    example: '"Although we ended up soaked, the feeling of what we achieved and the calories we burned more than made up for soggy hair and clothes. [...]."',
+    example: 'The cereal got soggy in the milk.',
   },
   {
     id: 8741,
@@ -52703,7 +52703,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8783,
     word: 'Sitcom',
     translation: 'Sitkom, Komedi Situasi',
-    example: '"Today we have Grumps (grim, ruthless, upwardly mobile professionals), Dinks (those with dual-income, no kids), Sitcoms (those with single-income...',
+    example: 'Friends is a popular sitcom.',
   },
   {
     id: 8784,
@@ -53297,7 +53297,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 8882,
     word: 'Tulip',
     translation: 'Tulip, Bunga',
-    example: '"The sturdy burghers of Holland took the tulip mania so badly that single bulbs that could not flower till another year would sell for more than...',
+    example: 'Holland is famous for tulips.',
   },
   {
     id: 8883,
@@ -55463,7 +55463,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 9243,
     word: 'Dynamo',
     translation: 'Dinamo, Generator Listrik',
-    example: '"As usual, it isn\'t telling the truth about it or you. But your body is. I can feel its vitality like the pulse of a dynamo."',
+    example: 'She is a dynamo of energy.',
   },
   {
     id: 9244,
@@ -59669,7 +59669,7 @@ export const vocabularyList: Vocabulary[] = [
     id: 9944,
     word: 'Trundle',
     translation: 'Menggelinding, Gerobak Kecil',
-    example: '"When he comes back will be turned out." "But I always knew it was a one-year job." "Oh you don\'t mind being like a rented article from Hertz\'s...',
+    example: 'The bus trundled down the street.',
   },
   {
     id: 9945,
@@ -59826,5 +59826,185 @@ export const vocabularyList: Vocabulary[] = [
     word: 'Zodiac',
     translation: 'Zodiak, Lingkaran Bintang',
     example: 'Tremulous on the bladed graſs ſhone bright the pearly drops, like an aſſembly of ſparkling ſtars dancing on the plains of the zodiac.',
+  },
+  {
+    id: 9971,
+    word: 'Bandwidth',
+    translation: 'Lebar Pita, Kapasitas',
+    example: 'The video streaming requires high bandwidth.',
+  },
+  {
+    id: 9972,
+    word: 'Encryption',
+    translation: 'Enkripsi, Penyandian',
+    example: 'Data encryption protects your privacy.',
+  },
+  {
+    id: 9973,
+    word: 'Firewall',
+    translation: 'Dinding Api, Keamanan Jaringan',
+    example: 'The firewall blocked the unauthorized access.',
+  },
+  {
+    id: 9974,
+    word: 'Glitch',
+    translation: 'Kerusakan Kecil, Gangguan',
+    example: 'There was a glitch in the system.',
+  },
+  {
+    id: 9975,
+    word: 'Hacker',
+    translation: 'Peretas',
+    example: 'The hacker tried to steal the passwords.',
+  },
+  {
+    id: 9976,
+    word: 'Latency',
+    translation: 'Latensi, Keterlambatan',
+    example: 'Low latency is important for online gaming.',
+  },
+  {
+    id: 9977,
+    word: 'Malware',
+    translation: 'Perangkat Lunak Berbahaya',
+    example: 'Install antivirus to protect against malware.',
+  },
+  {
+    id: 9978,
+    word: 'Offline',
+    translation: 'Luring, Tidak Terhubung',
+    example: 'You can read the articles offline.',
+  },
+  {
+    id: 9979,
+    word: 'Router',
+    translation: 'Router, Penghala',
+    example: 'Restart the router if the internet is slow.',
+  },
+  {
+    id: 9980,
+    word: 'Server',
+    translation: 'Peladen, Server',
+    example: 'The server is down for maintenance.',
+  },
+  {
+    id: 9981,
+    word: 'Widget',
+    translation: 'Widget, Perangkat Kecil',
+    example: 'Add a weather widget to your home screen.',
+  },
+  {
+    id: 9982,
+    word: 'Xenon',
+    translation: 'Xenon (Gas)',
+    example: 'Xenon is used in some types of lamps.',
+  },
+  {
+    id: 9983,
+    word: 'Iconic',
+    translation: 'Ikonik, Terkenal',
+    example: 'The Eiffel Tower is an iconic landmark.',
+  },
+  {
+    id: 9984,
+    word: 'Radiant',
+    translation: 'Berseri-seri, Memancar',
+    example: 'She looked radiant on her wedding day.',
+  },
+  {
+    id: 9985,
+    word: 'Zigzag',
+    translation: 'Zig-zag, Berkelok-kelok',
+    example: 'The path zigzags up the hill.',
+  },
+  {
+    id: 9986,
+    word: 'Haggard',
+    translation: 'Lesu, Kurus Kering',
+    example: 'He looked haggard after a sleepless night.',
+  },
+  {
+    id: 9987,
+    word: 'Macaw',
+    translation: 'Burung Makau',
+    example: 'The macaw has colorful feathers.',
+  },
+  {
+    id: 9988,
+    word: 'Udder',
+    translation: 'Ambing (Susu Sapi)',
+    example: 'The farmer milked the cow\'s udder.',
+  },
+  {
+    id: 9989,
+    word: 'Xylophone',
+    translation: 'Xilofon (Alat Musik)',
+    example: 'The child played a tune on the xylophone.',
+  },
+  {
+    id: 9990,
+    word: 'Fjord',
+    translation: 'Fjord, Teluk Sempit',
+    example: 'Norway is famous for its beautiful fjords.',
+  },
+  {
+    id: 9991,
+    word: 'Geyser',
+    translation: 'Geyser, Mata Air Panas',
+    example: 'Old Faithful is a famous geyser.',
+  },
+  {
+    id: 9992,
+    word: 'Jinx',
+    translation: 'Pembawa Sial',
+    example: 'I don\'t want to jinx it by talking about it.',
+  },
+  {
+    id: 9993,
+    word: 'Vixen',
+    translation: 'Rubah Betina, Wanita Galak',
+    example: 'The vixen protected her cubs.',
+  },
+  {
+    id: 9994,
+    word: 'Xerox',
+    translation: 'Fotokopi (Merek)',
+    example: 'Can you Xerox this document for me?',
+  },
+  {
+    id: 9995,
+    word: 'Coven',
+    translation: 'Perkumpulan Penyihir',
+    example: 'The witches gathered in a coven.',
+  },
+  {
+    id: 9996,
+    word: 'Gnome',
+    translation: 'Kurcaci',
+    example: 'There is a garden gnome on the lawn.',
+  },
+  {
+    id: 9997,
+    word: 'Kudos',
+    translation: 'Pujian, Penghargaan',
+    example: 'Kudos to you for a job well done.',
+  },
+  {
+    id: 9998,
+    word: 'Nova',
+    translation: 'Bintang Baru (Ledakan)',
+    example: 'The astronomer discovered a supernova.',
+  },
+  {
+    id: 9999,
+    word: 'Blockchain',
+    translation: 'Rantai Blok (Teknologi)',
+    example: 'Bitcoin uses blockchain technology.',
+  },
+  {
+    id: 10000,
+    word: 'Cryptocurrency',
+    translation: 'Mata Uang Kripto',
+    example: 'He invested in cryptocurrency.',
   },
 ];
