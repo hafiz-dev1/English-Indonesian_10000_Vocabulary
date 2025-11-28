@@ -14,8 +14,17 @@ export default function VocabularyCard({ item, showExamples, showSpeaker, showTr
   const [isRevealed, setIsRevealed] = useState(false);
 
   const speak = (text: string) => {
+    window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = "en-US";
+    
+    // Ensure US English voice is selected if available
+    const voices = window.speechSynthesis.getVoices();
+    const usVoice = voices.find(v => v.lang === 'en-US' || v.lang === 'en_US');
+    if (usVoice) {
+      utterance.voice = usVoice;
+    }
+
     window.speechSynthesis.speak(utterance);
   };
 

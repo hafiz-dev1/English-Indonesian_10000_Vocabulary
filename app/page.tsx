@@ -381,7 +381,7 @@ export default function Home() {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1.5 md:gap-6">
           {currentVocab.length > 0 ? (
             currentVocab.map((item) => (
               <VocabularyCard 
