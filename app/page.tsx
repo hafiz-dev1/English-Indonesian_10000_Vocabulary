@@ -212,6 +212,10 @@ export default function Home() {
               </button>
             </div>
           </div>
+
+          <p className="text-zinc-400 dark:text-zinc-500 text-sm text-center mt-4">
+            Tip: Double-click or hold down a word to toggle favorites
+          </p>
         </div>
 
         {/* Controls Section */}
