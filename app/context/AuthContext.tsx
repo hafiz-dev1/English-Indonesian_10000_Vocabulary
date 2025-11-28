@@ -4,9 +4,7 @@ import { createContext, useContext, useEffect, useState, ReactNode } from "react
 import { 
   onAuthStateChanged, 
   signInWithPopup,
-  signInWithRedirect,
   signOut, 
-  getRedirectResult,
   User 
 } from "firebase/auth";
 import { auth, googleProvider } from "../lib/firebase";
