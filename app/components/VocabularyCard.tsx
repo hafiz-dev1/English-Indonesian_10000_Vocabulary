@@ -120,7 +120,7 @@ export default function VocabularyCard({ item, showExamples, showSpeaker, showTr
             item.translation.split(',').map((t, i, arr) => (
               <span 
                 key={i} 
-                className="text-lg md:text-xl font-normal text-zinc-600 dark:text-white text-right leading-tight wrap-break-word text-balance select-none"
+                className="text-lg md:text-xl font-normal text-zinc-600 dark:text-white text-right leading-tight wrap-break-word text-balance select-none font-samsung"
               >
                 {t.trim()}{i < arr.length - 1 ? ',' : ''}
               </span>
@@ -143,7 +143,7 @@ export default function VocabularyCard({ item, showExamples, showSpeaker, showTr
       {/* Bottom Row: Example */}
       {showExamples && item.example && (
         <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800">
-          <p className="text-base text-zinc-600 dark:text-zinc-300 italic leading-relaxed">
+          <p className="text-base text-zinc-600 dark:text-zinc-300 italic leading-relaxed font-samsung">
             &quot;{item.example}&quot;
           </p>
         </div>

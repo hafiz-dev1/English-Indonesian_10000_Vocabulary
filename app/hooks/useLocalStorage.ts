@@ -8,16 +8,13 @@ export function useLocalStorage<T>(key: string, initialValue: T) {
     if (storedValue !== null) {
       try {
         const parsed = JSON.parse(storedValue);
-        // Only update if value is different to avoid unnecessary re-renders
-        // Note: This simple check works for primitives. For objects, deep comparison might be needed but is overkill here.
-        if (JSON.stringify(parsed) !== JSON.stringify(value)) {
-             setValue(parsed);
-        }
+        // Use setTimeout to avoid synchronous state update warning during hydration
+        setTimeout(() => setValue(parsed), 0);
       } catch (e) {
         console.error("Error parsing local storage key", key, e);
       }
     }
-  }, [key]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [key]);
 
   const setStoredValue = (newValue: T) => {
     setValue(newValue);
