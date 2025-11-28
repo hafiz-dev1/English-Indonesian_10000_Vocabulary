@@ -70,12 +70,18 @@ export default function Home() {
     const unsubscribe = onSnapshot(userRef, (docSnap) => {
       if (docSnap.exists()) {
         const data = docSnap.data();
-        setFavorites(data.favorites || []);
+        // Ensure favorites is an array
+        const remoteFavorites = Array.isArray(data.favorites) ? data.favorites : [];
+        setFavorites(remoteFavorites);
       } else {
         setFavorites([]);
       }
     }, (error) => {
       console.error("Error syncing favorites:", error);
+      setNotification({
+        message: "Error syncing data",
+        type: 'error'
+      });
     });
 
     return () => unsubscribe();
@@ -90,14 +96,11 @@ export default function Home() {
       return;
     }
 
-    let newFavorites: number[];
+    // Optimistic update
     const isRemoving = favorites.includes(id);
-    
-    if (isRemoving) {
-      newFavorites = favorites.filter(favId => favId !== id);
-    } else {
-      newFavorites = [...favorites, id];
-    }
+    const newFavorites = isRemoving 
+      ? favorites.filter(favId => favId !== id)
+      : [...favorites, id];
 
     setFavorites(newFavorites);
 
@@ -112,9 +115,11 @@ export default function Home() {
     } catch (error) {
       console.error("Error updating favorites in Firestore:", error);
       setNotification({
-        message: "Failed to save to cloud",
+        message: "Failed to save to cloud. Please check your connection.",
         type: 'error'
       });
+      // Revert optimistic update
+      setFavorites(favorites);
     }
   };
 
